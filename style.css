@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #2c73d2;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --success-color: #00c9a7;
+  --error-color: #d83121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.resume {
+  display: flex;
+  padding: 10px 0;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resume > div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.newItem {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.divDesc,
+.divType,
+.divAmount {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.newItem > button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newItem > button:hover {
+  background-color: var(--success-color);
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.divTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  border-bottom: 2px solid #ccc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--secondary-color);
+}
+
+.columnAction > button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.columnAction > button i {
+  font-size: 24px;
+}
+
+.bxs-chevron-up-circle {
+  color: var(--success-color);
+}
+
+.bxs-chevron-down-circle {
+  color: var(--error-color);
+}
+
+.columnAmount {
+  width: 30%;
+}
+
+.columnType {
+  width: 15%;
+  text-align: center;
+}
